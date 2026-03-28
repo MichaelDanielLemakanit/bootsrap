@@ -1,0 +1,7 @@
+.head{
+    background-image: url(head.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 50vh; /* This makes it take up 50% of the screen height */
+    width: 100%;
+}
