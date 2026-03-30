@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>Study Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="Favicon" href="">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade flex-wrap" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="Register">Rigister</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-register" data-bs-register="modal" aria-label="Register"></button>
+
+          </div>
+          <!-- modal form -->
+          <div class="modal-body">
+            <form class="row g-3">
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label text-info">First Name</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label text-info">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label text-info">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label text-info">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputphoneNumber10" class="form-label text-info">Phone Number</label>
+                    <input type="number" class="form-control" id="inputphoneNumber">
+                  </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label text-info">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label text-info">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label text-info">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label text-info">State</label>
+                  <select id="inputState" class="form-select text-info">
+                    <option value="">choose</option>
+                    <option value="">Nairobi</option>
+                    <option value="">Nakuru</option>
+                    <option value="">Nanyuki</option>
+                    <option value="">Kisumu</option>
+                    <option value="">others</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label text-info">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input bg-info" type="checkbox" id="gridCheck">
+                    <label class="form-check-label text-info" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-info">Sign in</button>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar container -->
+    <nav class="navbar navbar-expand-lg mt-0 pt-0">
+        <div class="container-fluid px-5 fixed-top bg-body-tertiary opacity-75">
+            <!-- button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand fw-bold text-info" href="#">
+                <sub><i class="fa-regular fa-gem fs-3 text-info"></i></sub>
+                <span class="fs-3">Study Course</span>
+                <p class="fs-6 fw-light px-5 m-0 text-black">journey to success</p>
+            </a>
+    
+            <!--this collapse div -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <!-- mx-auto centers the links -->
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+    
+                <!-- Icons-->
+                <div class="d-flex justify-content-center align-items-center gap-3 py-3 py-lg-0">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <!-- login button -->
+                    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#login">
+                        login
+                    </button>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- text container -->
+<div class="container-fluid position-relative overflow-hidden text-center rounded shadow flex-wrap">
+    
+    <img src="images/taskbg.jpg" 
+         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" 
+         alt="">
+
+    <div class="py-5 text-white">
+        <h1 class="display-4 fw-bold mt-5 pt-5">50% Discount on Popular <br> Courses</h1>
+        <p class="lead">Take the first step to your journey to success with us</p>
+        <button class="btn btn-info px-4 py-2 fw-bold link-light">
+            Ready to get started?
+        </button>
+    </div>
+</div>
+ <!--card container -->
+ <div class="container-fluid mt-5 pt-5 d-flex gap-4 text-break flex-wrap bg-secondary-subtle justify-content-center align-items-center">
+    <!-- cards -->
+    <div class="card" style="width: 22rem;">
+        <img src="images/taskcard1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <span class="text-danger d-flex justify-content-between">$35.00
+                <span>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                </span>
+            </span>
+          <h5 class="card-title mb-0 pb-0 mt-3">Open Programming Courses for
+            everyone :Python</h5>
+            <span class="icon-link mt-2">
+                <span>
+                    <i class="fa-regular fa-clock fa-sm" style="color: rgb(128, 128, 128);"></i>
+                </span>
+                <span>20hr</span>
+                <span>
+                    <i class="fa-solid fa-lock" style="color: rgb(128, 128, 128);"></i>
+                    <span>50</span>
+                </span>
+            </span>
+        </div>
+        <hr>
+        <div class="profile m-2">
+            <span class="d-inline-block" style="width: 30px;"> 
+                <img class="rounded-circle img-fluid mx-2" src="images/taskpfl1.jpg" alt="Profile">
+            </span>
+            <span class="mx-3"><span class="text-muted">by</span><span class="text-black fw-bold"> Olivia </span><span class="text-muted">in</span> <span class="text-black fw-bold">Programing</span>
+        </span>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card" style="width: 22rem;">
+        <img src="images/taskcard2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <span class="text-danger d-flex justify-content-between">$35.00
+                <span>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                </span>
+            </span>
+          <h5 class="card-title mb-0 pb-0 mt-3">Open Programming Courses for
+            everyone :Python</h5>
+            <span class="icon-link mt-2">
+                <span>
+                    <i class="fa-regular fa-clock fa-sm" style="color: rgb(128, 128, 128);"></i>
+                </span>
+                <span>20hr</span>
+                <span>
+                    <i class="fa-solid fa-lock" style="color: rgb(128, 128, 128);"></i>
+                    <span>50</span>
+                </span>
+            </span>
+        </div>
+        <hr>
+        <div class="profile m-2">
+            <span class="d-inline-block" style="width: 30px;"> 
+                <img class="rounded-circle img-fluid mx-2" src="images/taskpfl2.jpg" alt="Profile">
+            </span>
+            <span class="mx-3"><span class="text-muted">by</span><span class="text-black fw-bold"> Isabela </span><span class="text-muted">in</span> <span class="text-black fw-bold">Teaching</span>
+        </span>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card" style="width: 22rem;">
+        <img src="images/taskcard3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <span class="text-danger d-flex justify-content-between">$35.00
+                <span>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                    <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                </span>
+            </span>
+          <h5 class="card-title mb-0 pb-0 mt-3">Open Programming Courses for
+            everyone :Python</h5>
+            <span class="icon-link mt-2">
+                <span>
+                    <i class="fa-regular fa-clock fa-sm" style="color: rgb(128, 128, 128);"></i>
+                </span>
+                <span>20hr</span>
+                <span>
+                    <i class="fa-solid fa-lock" style="color: rgb(128, 128, 128);"></i>
+                    <span>50</span>
+                </span>
+            </span>
+        </div>
+        <hr>
+        <div class="profile m-2">
+            <span class="d-inline-block" style="width: 30px;"> 
+                <img class="rounded-circle img-fluid mx-2" src="images/taskpfl3.jpg" alt="Profile">
+            </span>
+            <span class="mx-3"><span class="text-muted">by</span><span class="text-black fw-bold"> William </span><span class="text-muted">in</span> <span class="text-black fw-bold">Programing</span>
+        </span>
+        </div>
+      </div>
+ </div>
+ <!-- footer -->
+ <div class="container mt-5 pt-5 flex-column text-center text-break w-75 flex-wrap">
+    <h1 class="fs-6">
+      Control your personal preference settings to get notified about <br>
+      <span>
+        Appropriate courses
+        <span>
+          <a href="View Courses" class="text-decoration-none text-danger"> View Courses</a>
+        </span>
+      </span>
+    </h1>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
